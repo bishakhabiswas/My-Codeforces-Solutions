@@ -22,6 +22,5 @@ int   count=0;
    else{
     cout<<"Malvika";
    }
-
-}
+   }
 
