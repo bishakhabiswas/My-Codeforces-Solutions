@@ -10,21 +10,14 @@ int main()
     {
        cin>>n>>k1>>k2;
        cin>>w>>b;
-     long long  white = k1+k2;
-    long long   black =(2*n)- white ;
-       if(white>=(2*w) && black>=(2*b) )
+     int TW = k1+k2;
+    int  TB =(2*n)- TW ;
+       if(TW>=(2*w) && TB>=(2*b) )
        {
            cout<<"YES"<<endl;
        }
        else{cout<<"NO"<<endl;}
 
-     /*   if(k1+k2>w && k1+k2>b)
-        {
-          cout<<"YES"<<endl;
-        }
-        else{
-            cout<<"NO"<<endl;
-        }*/
 
     }
 }

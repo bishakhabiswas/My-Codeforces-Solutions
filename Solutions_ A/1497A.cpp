@@ -5,7 +5,7 @@ using namespace std;
 int main()
 {
 
-    int t,n;
+    int t,n,p;
     cin>>t;
     while(t--)
     { cin>>n;
@@ -15,20 +15,28 @@ int main()
         cin>>a[i];
     }
     sort(a,a+n);
+    vector <int> vec;
     for(int i=0;i<n;i++)
     {
         if(a[i]==a[i+1])
-        {  a[n]++ ;
-              a[n+1] = a[i];
-            a[i] = a[i+1];
+        {  vec.push_back(a[i]);
         }
-    }
-     for(int i=0;i<n;i++)
+        else
+            {
+            cout<<a[i]<<" ";
+        }
+
+
+        }
+
+
+     for(int i=0;i<vec.size();i++)
     {
-    cout<<a[i]<<" ";
+    cout<<vec[i]<<" ";
+    }
+    cout<<endl;
+    }
     }
 
-    }
 
 
-}
