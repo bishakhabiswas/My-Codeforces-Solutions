@@ -1,12 +1,23 @@
+///1498A. GCD Sum
+///#711 Div-2
+
+
+
 #include<bits/stdc++.h>
-#include<numeric>
 using namespace std;
+int gcd(int a,int b)
+{
+    if(b==0)
+        return a;
+
+    return gcd(b,a%b);
+}
 int main()
 {
-    int t,x,gcd;
+     int t,x,c,q,n,res=0,res1=0;
 
     cin>>t;
-    int sum=0;
+   int sum;
     while(t--)
     {
         int n;
@@ -15,32 +26,31 @@ int main()
         while(p)
         {
 
-        x= n%10;
-        p = p/10;
+        x= p%10;
         sum +=x;
+        p = p/10;
         }
-       // cout<<sum<<endl;
-        for(int i=1;i<=sum;i++)
+
+        while(res1<=1)
         {
-            if(sum%i==0 && n%i==0)
+            res=sum;
+            res1= gcd(n,res);
+            if(res1<=1)
             {
-                gcd =i;
+                n=n+1;
             }
         }
 
-        if(gcd==1)
-        {
-            n++;
-            cout<<n<<endl;
-        }
 
-          else if (gcd>1)
-        {
-            cout<<n<<endl;
-        }
+ cout<<n<<endl;
 
 }
+
 }
+
+
+
+
 
 
 
