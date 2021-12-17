@@ -13,7 +13,7 @@ int main()
         for(ll i=0;i<n;i++)
             {
             ll x = abs(a[i]);
-        if(x%2!=0) cout<<-x<<" ";
+        if(i%2!=0) cout<<-x<<" ";
         else cout<<x<<" ";
         }
 
