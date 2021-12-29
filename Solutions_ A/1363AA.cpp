@@ -22,13 +22,13 @@ int main()
             else
                 even++;
         }
-        if(odd!=1)
+        if(!odd)
             cout<<"No"<<endl;
         else
         {
             x--;
             odd--;
-            while(x!=0)
+            while(x>0)
             {
                 if(odd>=2 && x>=2)
                     odd-=2,x-=2;
