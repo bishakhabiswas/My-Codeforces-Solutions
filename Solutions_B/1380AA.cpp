@@ -19,7 +19,7 @@ while(t--)
         if(a[i]>a[i-1]&& a[i]>a[i+1])
         {
             cout<<"YES"<<endl;
-            cout<<i-1 <<" "<<i<" "<<i+1<<endl;
+            cout<<i-1 <<" "<<i<<" "<<i+1<<endl;
             goto read;
         }
 
