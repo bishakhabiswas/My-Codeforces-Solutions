@@ -12,7 +12,7 @@ int main()
         sort(a,a+3);
         if(a[1]==a[2])
         {  cout<<"YES"<<endl;
-            cout<<a[2]<<" "<<a[0]<<" "<<a[0];
+            cout<<a[2]<<" "<<a[0]<<" "<<a[0]<<endl;
         }
         else cout<<"NO"<<endl;
 
